@@ -1,71 +1,74 @@
-# 🏆 Score Predictor
+# ⚽ Live Scores
 
-> Predict scores for Euro 2024 — play with friends and compete on who sees the future.
+> Live football scores, fixtures and stats from across the globe — personalized by league and theme.
 
 ![Next.js](https://img.shields.io/badge/Next.js-000?logo=nextdotjs&logoColor=white)
 ![React](https://img.shields.io/badge/React-20232A?logo=react&logoColor=61DAFB)
-![Redux](https://img.shields.io/badge/Redux-593D88?logo=redux&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?logo=mongodb&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind-06B6D4?logo=tailwindcss&logoColor=white)
+![Sass](https://img.shields.io/badge/Sass-CC6699?logo=sass&logoColor=white)
 
-**Live →** [luzone.netlify.app](https://luzone.netlify.app/)
+**Live →** [rmscores.netlify.app](https://rmscores.netlify.app/)
 
 ---
 
 ## About
 
-A real-time score prediction game built around the Euro 2024 Championship. Friends can join, predict match scores for every fixture, and compete on a leaderboard to see who called it right.
+A mobile-first football dashboard delivering real-time match data from leagues around the world. Built as a personal side project — the goal was a fast, clean sports app without the ads, noise, and clutter of mainstream platforms.
 
-Built mobile-first — designed to be used on your phone during the tournament.
+Users can follow their favourite leagues and set a custom theme color that persists across sessions via their account.
 
 ## Problem
 
-Friends wanted a fun, competitive way to predict match scores during Euro 2024 without the overhead of spreadsheets or manual tracking.
+Mainstream sports apps are bloated with ads and irrelevant content. Getting to live scores for the leagues you actually follow takes too many taps.
 
 ## Solution
 
-A real-time prediction app with friend groups, per-match score inputs, and a live leaderboard — so everyone can see the standings update as results come in.
+A lightweight, focused dashboard powered by Rapid API for live data, with Clerk oAuth for persistent personalization — pinned leagues and custom UI theme saved per account.
 
 ## Tech Stack
 
 | Layer | Tech |
 |-------|------|
-| Frontend | Next.js, React |
-| State | Redux |
-| Database | MongoDB (Atlas) |
-| Styling | Tailwind CSS |
+| Framework | Next.js |
+| Frontend | React |
+| Auth | Clerk (oAuth) |
+| Data | Rapid API (football data) |
+| Styling | Tailwind CSS, Sass |
 
 ## Features
 
-- Predict scores for every Euro 2024 match
-- Compete with friends on a live leaderboard
-- Mobile-first responsive design
-- Real-time standings as results come in
+- Live match scores and fixtures worldwide
+- Follow and pin favourite leagues
+- Personalized theme color per user
+- Auth via Clerk — preferences persist across devices
+- Mobile-first design
 
 ## Getting Started
 
 ```bash
 # Clone the repo
-git clone https://github.com/raul0073/euro24-score-predictor.git
-cd euro24-score-predictor
+git clone https://github.com/raul0073/LiveScores.git
+cd LiveScores
 
 # Install dependencies
 npm install
 
 # Set up environment variables
 cp .env.example .env.local
-# Add your MongoDB URI and any required API keys
+# Add your Rapid API key and Clerk credentials
 
 # Run the dev server
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) in your browser.
+Open [http://localhost:3000](http://localhost:3000).
 
 ## Environment Variables
 
 ```env
-MONGODB_URI=your_mongodb_connection_string
+NEXT_PUBLIC_RAPIDAPI_KEY=your_rapid_api_key
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key
+CLERK_SECRET_KEY=your_clerk_secret_key
 ```
 
 ---
