@@ -1,82 +1,73 @@
-# 🚀 Landing Page Starter Kit
+# 🏆 Score Predictor
 
-> Free open-source landing page template — clean, fast, production-ready Next.js starter.
+> Predict scores for Euro 2024 — play with friends and compete on who sees the future.
 
 ![Next.js](https://img.shields.io/badge/Next.js-000?logo=nextdotjs&logoColor=white)
 ![React](https://img.shields.io/badge/React-20232A?logo=react&logoColor=61DAFB)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=white)
+![Redux](https://img.shields.io/badge/Redux-593D88?logo=redux&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?logo=mongodb&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind-06B6D4?logo=tailwindcss&logoColor=white)
-![Open Source](https://img.shields.io/badge/Open%20Source-❤️-red)
-![Stars](https://img.shields.io/github/stars/raul0073/saas-landing-page-template?style=social)
 
-**Live Demo →** [rms-demo.vercel.app](https://rms-demo.vercel.app/)
+**Live →** [luzone.netlify.app](https://luzone.netlify.app/)
 
 ---
 
 ## About
 
-A free, open-source landing page starter kit built with Next.js and Tailwind CSS. Designed to give developers and small businesses a production-ready starting point with clean structure, responsive layout, and easy customization — without rebuilding the same boilerplate from scratch every time.
+A real-time score prediction game built around the Euro 2024 Championship. Friends can join, predict match scores for every fixture, and compete on a leaderboard to see who called it right.
+
+Built mobile-first — designed to be used on your phone during the tournament.
 
 ## Problem
 
-Developers and small businesses waste hours rebuilding the same landing page foundation on every new project. Most templates are either too opinionated, too bloated, or paywalled.
+Friends wanted a fun, competitive way to predict match scores during Euro 2024 without the overhead of spreadsheets or manual tracking.
 
 ## Solution
 
-An opinionated-but-flexible starter with best practices baked in — free for anyone to use and fork. Just clone, customize, and ship.
+A real-time prediction app with friend groups, per-match score inputs, and a live leaderboard — so everyone can see the standings update as results come in.
 
 ## Tech Stack
 
 | Layer | Tech |
 |-------|------|
-| Framework | Next.js (App Router) |
-| Language | TypeScript |
+| Frontend | Next.js, React |
+| State | Redux |
+| Database | MongoDB (Atlas) |
 | Styling | Tailwind CSS |
-| Deployment | Vercel |
 
-## What's Included
+## Features
 
-- Clean, responsive layout out of the box
-- Hero, features, pricing, testimonials, and CTA sections
-- Mobile-first design
-- TypeScript throughout
-- Optimized for Vercel deployment
-- Easy to customize — swap colors, copy, and sections
+- Predict scores for every Euro 2024 match
+- Compete with friends on a live leaderboard
+- Mobile-first responsive design
+- Real-time standings as results come in
 
 ## Getting Started
 
 ```bash
 # Clone the repo
-git clone https://github.com/raul0073/saas-landing-page-template.git
-cd saas-landing-page-template
+git clone https://github.com/raul0073/euro24-score-predictor.git
+cd euro24-score-predictor
 
 # Install dependencies
 npm install
+
+# Set up environment variables
+cp .env.example .env.local
+# Add your MongoDB URI and any required API keys
 
 # Run the dev server
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) and start customizing.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-## Deployment
+## Environment Variables
 
-The easiest way to deploy is with [Vercel](https://vercel.com):
-
-```bash
-npx vercel
+```env
+MONGODB_URI=your_mongodb_connection_string
 ```
 
-Or connect your GitHub repo directly in the Vercel dashboard for automatic deployments on push.
-
-## Customization
-
-- **Colors & theme** — edit `tailwind.config.ts`
-- **Content** — update the section components in `/components`
-- **Sections** — add or remove sections in `app/page.tsx`
-
 ---
-
-If this saved you time, a ⭐ on GitHub is appreciated!
 
 Built by [Raul](https://github.com/raul0073)
