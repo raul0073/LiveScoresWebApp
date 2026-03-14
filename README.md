@@ -1,12 +1,28 @@
 # Live Scores
 
-Personal football dashboard. Live scores, fixtures, and stats from leagues worldwide — Pin your leagues, set a custom theme color, preferences persist via your account.
+A personal football dashboard delivering live match data from leagues worldwide. Built out of frustration with mainstream sports apps — this is fast, ad-free, and shows only what you actually follow.
+
+Users authenticate via Clerk, pin their favourite leagues, and set a custom UI theme color. Preferences persist across devices.
 
 **[Live](https://rmscores.netlify.app/)**
 
-## Stack
+---
 
-Next.js · React · Sass · Tailwind · Rapid API · Clerk
+## Highlights
+
+- Live scores, fixtures, and match stats across global leagues
+- Personalized feed — pin the leagues you follow
+- Custom theme color per user account
+- Auth via Clerk oAuth — preferences sync across devices
+- Mobile-first layout built for quick glanceability
+
+## Tech
+
+**Frontend** — Next.js, React, Tailwind CSS, Sass  
+**Auth** — Clerk (oAuth)  
+**Data** — Rapid API (football)
+
+Rapid API feeds live match data. Clerk handles auth and gives each user a persistent profile for their pinned leagues and theme preference — no custom auth layer needed.
 
 ## Run locally
 
